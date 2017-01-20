@@ -1,0 +1,123 @@
+
+#gallery_tag{
+         width:90%;
+         text-align: center;
+         padding:1px;
+         padding-left:10px;
+         margin:100px auto -10px ;
+         border-bottom: solid 1px $text;
+      
+ 
+        }
+
+.gallery-container{
+    display: flex;
+    width:90%;
+    margin:15px auto 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:relative;
+   
+    @include fadein;
+    
+    
+    .gallery-item{
+          
+        opacity:0.0;
+        width:80%;
+        max-width:600px;
+        min-width:250px;
+        margin:10px;
+        text-align: center;
+        pointer-events: none;
+        @media screen and (min-width:768px){
+            width:25%;
+            min-width: 300px;
+        }
+       
+        img{
+            width:$full-width;
+            border-radius: 2px;
+        }
+    }
+    .gallery-item:hover{
+             animation: size 400ms forwards;
+             box-shadow:10px 10px 100px $text;
+        }
+}
+.portfolio-expand{
+   background:rgba($white,.9);
+  
+    
+    p{
+        width:70%;
+        
+         a{
+             padding:15px;
+             color:$text;
+    }
+    }
+    div{
+       
+        display: block;
+        margin: 45px auto;
+    }
+    ul{
+        
+        @include sample-width;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    li{
+        display: inline-block;
+        margin:5px  ;
+        padding:5px;
+        border-radius: 3px;
+        border: solid 2px darken($grad1,20%);
+        background:$grad1;
+    }
+    h3 {
+        text-align: center;
+        clear:both;
+        padding-top:45px;
+        width: 100%;
+    }
+    h4{
+        text-align: left;
+    }
+    h1{
+        @include sample-width;
+        
+        margin-top:60px;
+        
+        border-bottom: solid 2px $text;
+        font-size:1.3rem;
+       
+    }
+    img{
+ 
+        @include sample-width;
+        width:90%; padding-top:5px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 3px;
+        padding-top:20px;
+    }
+    img:hover{
+        animation: size 1s forwards;
+        margin-bottom:20px;
+    }
+    p{
+        @include sample-width;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    h4{
+        @include sample-width;
+    }
+
+}
+

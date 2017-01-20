@@ -1,0 +1,62 @@
+@keyframes size{
+    0%{ 
+        transform: scale(1.0);
+        
+    }
+    100%{ 
+        transform: scale(1.03);
+    } 
+}
+
+@keyframes point{
+    0%{ 
+        cursor: default;
+        
+    }
+    100%{ 
+       cursor: pointer;
+    }
+}
+@keyframes subtle_bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-10px);}
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);
+     transform-origin: 50% 50%;}
+    to {transform:rotate(360deg);
+         transform-origin: 50% 50%;}
+}
+@keyframes fadein{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+@keyframes fadeout{
+       from{
+        opacity:1;
+    }
+    to{
+        opacity:.3;
+    }
+    
+}
+.fadein{
+    
+   -webkit-animation: fadein 1000ms linear; /* Safari 4+ */
+  -moz-animation: fadein 1000ms linear; /* Fx 5+ */
+  -o-animation: fadein 1000ms linear; /* Opera 12+ */
+  animation: fadein 1000ms linear; /* IE 10+, Fx 29+ */
+}
+.fadeout{
+  -webkit-animation: fadeout 1000ms linear; /* Safari 4+ */
+  -moz-animation: fadeout 1000ms linear; /* Fx 5+ */
+  -o-animation: fadeout 1000ms linear; /* Opera 12+ */
+  animation: fadeout 1000ms linear; /* IE 10+, Fx 29+ */
+}
+

@@ -1,0 +1,143 @@
+*:focus {
+    outline: none;
+}
+html{
+    
+    color:$text;
+    position: relative;
+    min-height:100%; 
+    
+    font-family: 'Josefin Sans', sans-serif;
+    @media screen and(max-width: 415px) { background: url(../video/light.png) #000 no-repeat center center fixed ;
+    background-size:auto 600%;}
+    
+}
+body{
+    width:100%;
+}
+iframe{
+  display: none;
+}
+
+a{
+    color:$text;
+    text-decoration: none;
+}
+a:hover{
+    color:lighten($text,30%);
+}
+p{ 
+    display:block;
+    margin:auto;
+    font-size: 1.2rem;
+    text-align:center;
+}
+ul{
+        text-align: center;
+        margin-left:-50px;
+}
+h1{
+    text-align: center;
+    @include sample-width;
+}
+li{
+    list-style: none;
+}
+.header{
+    position:absolute;
+    z-index:150;
+    top:-15px;
+    left:50px;
+    width:50%;
+    position:inherit;
+    margin:auto;
+    @include fadein;
+    li{
+        margin-top:25px;
+        @include no-background;
+        @include no-border;
+    }
+    .close{ 
+        @include absolute;
+        right:50px;
+        top:0;
+        border:none;
+        width: auto;
+    }
+    .intro{
+        @include absolute;
+        left:50px;
+        top:0px;
+        font-size: 2rem;
+    }
+    
+    svg{
+        width:40px;
+        float:right;
+    }
+}
+.go-back{
+    margin:0px;
+    float: left;
+    left:30px;
+    width:30px;
+    height: 30px;
+    fill:$text;
+    z-index:200;
+}
+.go-back:hover{
+    fill:$white;
+}
+.about-container{
+    padding:15px;
+    h2{
+        display: block;
+        width:100%;
+        text-align: left;
+        padding-left:20px;
+        padding-bottom:4px;
+        height: 25px;
+        margin: 50px auto;
+        border-bottom:solid $white 1px;
+        
+    }
+    p{ 
+        width:75%;
+        max-width:500px;
+        display: block;
+        margin:auto;
+        font-size: 1rem;
+        line-height: 25px;
+        text-align: left;
+        text-indent: 1em;
+        
+    } 
+}
+.download_resume{
+    position:fixed;
+    top:0px;
+    border-bottom:solid 1px lighten($grad1,5%);
+    left:0px;
+    width:100%;
+     background: linear-gradient(-20deg, $grad1 , $grad2);
+    height: 40px;
+    z-index:3000;
+     
+    h3{text-align: center;
+        margin-top:7px;
+        font-size: 1.333rem;
+    }
+}
+
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    padding-bottom:15px;
+    div{
+        @include fadein-delay;
+        opacity: 0.0;
+    }
+}
