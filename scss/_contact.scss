@@ -25,6 +25,11 @@
     padding:5px;
     fieldset{font-size: $rem-size;
         @include no-border;
+        ul{
+        li{
+        text-align: center;
+        }
+        }
     }
     label{
         @include center;
