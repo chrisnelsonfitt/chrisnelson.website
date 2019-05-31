@@ -1,27 +1,27 @@
 #contact-container{
-   
-    width:90%;
-    max-width:400px;
+
+
+
     padding:20px;
     border-radius: 4px;
     display: block;
     margin:5% auto 0px;
     h3{ padding:5px;
         max-width:375px;
-        text-align: left;
+        text-align: center;
         font-size:1.5rem;
         border-bottom: solid $text 1px;
-        
+
         margin:25px auto;
     }
 }
 #contact-form{
     border-radius: 5px;
-    max-width:700px;
+
     background:$grad4;
     @include center;
     font-size: $rem-size;
-    margin-bottom: 70px;
+    margin-bottom: 35px;
     padding:5px;
     fieldset{font-size: $rem-size;
         @include no-border;
@@ -46,15 +46,15 @@
     input:-moz-placeholder {
 	   color:darken($grey, 50%);
     }
-    input:-ms-input-placeholder { 
+    input:-ms-input-placeholder {
 	   color:darken($grey, 50%);
     }
-    input{ 
+    input{
         @include center;
         height: 30px;
         width:65%;
         font-size: 1rem;
-        
+
         @include no-border;
         border-bottom: solid grey 3px;
         @include no-background;
@@ -63,35 +63,34 @@
     }
     textarea{
         color:$text;
-        text-indent: 20px;
+
         @include center;
         width:65%;
         min-height:100px;
+        resize: vertical;
         border-radius: 5px;
         @include no-border;
         font-size: 1rem;
         border-bottom: solid grey 3px;
-        background:rgba(150,150,150, .2);   
+        background:rgba(150,150,150, .2);
     }
     .form-button{
         border-radius: 3px;
-        display: inline;  
         border-bottom: none;
-        border:solid 1px darken($grad1,5%);
         margin:10px;
-      
         background:$grad1;
+        max-width: 125px;
+
     }
     .form-button:hover{
-        background: linear-gradient(to top, lighten($grad1,5%) , darken($grad1,5%));
-        
+        background:  darken($grad1,5%);
         color:$grey;
     }
       #form-submit{
             @include center;
             margin: 20px auto;
-            width:40%; 
-        }  
+            width:40%;
+        }
 }
 span{
     width:100%;
@@ -105,7 +104,7 @@ span{
     }
     img{
         width:30px;
-    }  
+    }
 }
 #form-messages{
     display: block;
@@ -117,5 +116,5 @@ span{
     color:$almost_black;
     border-radius: 4px;
     text-align: center;
-    
+
 }

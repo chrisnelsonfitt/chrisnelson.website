@@ -1,19 +1,19 @@
 @keyframes size{
-    0%{ 
+    0%{
         transform: scale(1.0);
-        
+
     }
-    100%{ 
-        transform: scale(1.03);
-    } 
+    100%{
+        transform: scale(1.2);
+    }
 }
 
 @keyframes point{
-    0%{ 
+    0%{
         cursor: default;
-        
+
     }
-    100%{ 
+    100%{
        cursor: pointer;
     }
 }
@@ -44,14 +44,14 @@
     to{
         opacity:.3;
     }
-    
+
 }
 .fadein{
-    
-   -webkit-animation: fadein 1000ms linear; /* Safari 4+ */
-  -moz-animation: fadein 1000ms linear; /* Fx 5+ */
-  -o-animation: fadein 1000ms linear; /* Opera 12+ */
-  animation: fadein 1000ms linear; /* IE 10+, Fx 29+ */
+
+   -webkit-animation: fadein 500ms linear; /* Safari 4+ */
+  -moz-animation: fadein 500ms linear; /* Fx 5+ */
+  -o-animation: fadein 500ms linear; /* Opera 12+ */
+  animation: fadein 500ms linear; /* IE 10+, Fx 29+ */
 }
 .fadeout{
   -webkit-animation: fadeout 1000ms linear; /* Safari 4+ */
@@ -59,4 +59,3 @@
   -o-animation: fadeout 1000ms linear; /* Opera 12+ */
   animation: fadeout 1000ms linear; /* IE 10+, Fx 29+ */
 }
-

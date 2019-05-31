@@ -33,42 +33,29 @@
     padding-top:25px;
     padding-bottom: 100px;
     margin-top:30px;
-    
+
 }
 #selfie{
         display:block;
         margin: 0px auto 50px;
-        width:200px;
-        height: 200px;
+        min-width:225px;
+        min-height: 225px;
+        max-width: 25%;
+        width: 25%;
         border-radius: 100%;
-   
+
+}
+.subtag{
+  text-align: center;
+  padding-top:5%;
+  text-decoration: underline;
+}
+.second-tier{
+  padding-top:10%;
 }
 h1{font-size: 3rem;}
 h3{ text-align: center; font-size: 2rem;}
-
-#github-link {
-    padding-left:20px;
-    height: 30px;
-    display: block;
-    margin:auto ;
-    div{ width:225px;
-        display:block;
-        margin:auto;
-        h2{float:left;
-        color:$text;
-        margin: auto ;  
-        text-align: center;
-        @media screen and(min-width:340px){ margin-bottom: 0; }
-    }
-   h2:after{  
-        content:url(/img/github.svg);
-    }  
-    img{height: 70px;
-        display: block;
-        margin: -17px auto;
-        float:right;}
-    }
-    
-    
+#skillset-li{
+  font-size: 1rem;
+  text-align: left;
 }
-

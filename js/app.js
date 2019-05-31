@@ -7,9 +7,11 @@ var video_player = $("#video-player");
 var web_app = $("#web-app");
 var svg = $("#svg");
 var design = $("#design");
+var indreams = $("#indreams");
 var accessible = $("#accessible");
 var gallery_item = $(".gallery-item");
-var ajax_close = $(".close-expandable")
+var ajax_close = $(".close-expandable");
+var nerro = $("#nerro");
 //Show gallery Items as you scroll over them
    $(window).scroll( function(){
        //Check where each item is located
@@ -22,7 +24,7 @@ var ajax_close = $(".close-expandable")
             //When the item is completely in view change opacity to full
             $(this).animate({'opacity':'1'},300);
            }
-       }); 
+       });
    });
 
 
@@ -43,21 +45,26 @@ photography.click(function(){
     portfolio_load.load("ajax-files/photography.html");
 });
 responsive.click(function(){
-    portfolio_load.load("ajax-files/responsive.html");   
+    portfolio_load.load("ajax-files/responsive.html");
 });
 video_player.click(function(){
-    portfolio_load.load("ajax-files/video.html");  
+    portfolio_load.load("ajax-files/video.html");
 });
 web_app.click(function(){
-    portfolio_load.load("ajax-files/web-app.html");   
+    portfolio_load.load("ajax-files/web-app.html");
 });
 svg.click(function(){
-    portfolio_load.load("ajax-files/svg.html");  
+    portfolio_load.load("ajax-files/svg.html");
 });
 design.click(function(){
-    portfolio_load.load("ajax-files/design.html");  
+    portfolio_load.load("ajax-files/design.html");
 });
 accessible.click(function(){
-    portfolio_load.load("ajax-files/accessible.html"); 
-     
+    portfolio_load.load("ajax-files/accessible.html");
+});
+nerro.click(function(){
+  portfolio_load.load("ajax-files/nerro.html");
+});
+indreams.click(function(){
+  portfolio_load.load("ajax-files/dreamswrapper.html");
 });

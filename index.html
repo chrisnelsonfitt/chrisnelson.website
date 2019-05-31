@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html  lang="en">
  <head>
-     <title> Chris Nelson</title>
+     <title> Christopher Nelson</title>
          <link href="img/favicon.ico" rel="icon" type="image/x-icon"/>
             <meta charset="UTF-8">
             <meta name='viewport' content="width=device-width, initial_scale=1.0">
@@ -39,18 +39,15 @@
         <div class="about-container hide-show">
                   <div class="main_page_container">
             <img id="selfie" src="img/me.jpg" alt="Picture of Chris Nelson">
-            <h1>Chris Nelson</h1>
-            <h3>Front-End Developer</h3>
-              <p>I am an entry level web developer looking to prove myself. I am able to create websites to the highest of standards, I have a high awareness of industry issues and trends; particularly in regard to accessibility, usability, and emerging technologies.  </p>
-        </div>
+            <h1>Christopher Nelson</h1>
+            <h3>Android & Front-End Developer</h3>
+
+              <div class="skillset">
+                <h1 class="gallery_tag">Experience</h1>
+              <canvas id="skillsets"></canvas>
+              </div>
             </div>
-                     <div id="github-link">
-                         <div>
-        <a href="https://github.com/chrisnelsonfitt">
-        <h2>Github</h2>
-        </a>
-                             <a href="http://www.upwork.com/o/profiles/users/_~013d5d0132e6b7e4ad/"><img src="img/upwork.png" alt="upwork"></a>
-                         </div>
+
     </div>
         <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -58,12 +55,26 @@
 
         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
-      <div id="toLocation"> </div>
-     <h1 class="hide-show" id="gallery_tag">Gallery</h1>
 
-    <div class="portfolio-full hide"></div>
+        <div id="toLocation"> </div>
+    <div class="full-container">
+     <h1 class="hide-show gallery_tag" id="gallery_tag">Portfolio</h1>
+     <div class="portfolio-full hide"></div>
+     <h2 class="hide-show subtag">Android Development</h2>
       <div class="gallery-container hide-show">
+         <div class="gallery-item" id="nerro">
+           <img src="img/site-examples/nerrobanner.png" alt="nerro-notes android application">
+         </div>
+         <div class="gallery-item" id="indreams">
+           <img src="img/site-examples/dreams.png" alt"indreams.me webview application">
+         </div>
 
+     </div>
+
+    <h2 class="hide-show subtag second-tier">Web Development</h2>
+
+      <div class="gallery-container hide-show">
+                <!--Images should be a 16:9 ratio-->
                 <div class="gallery-item" id="forms">
                         <img src="img/site-examples/Form.png" alt="Form Project Example">
                     </a>
@@ -113,32 +124,28 @@
                         <img src="img/site-examples/design.png" alt=" site design">
                     </a>
           </div>
-
+          <br>
             </div>
+          </div>
          <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
                                           Contact Form
 
-        ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
-      <div class="hide-show" id="contact-container">
+        ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+     <div class="hide-show" id="contact-container">
             <div id="contact-form">
                  <iframe name="frame"></iframe>
                  <h3>Contact Me</h3>
-                 <ul>
-                     <li>Phone: (352)348-2468</li>
-                     <li>Email: cmfnels@gmail.com</li>
-                 </ul>
                 <div id="form-messages"></div>
 
                 <form target="frame" id="ajax-contact" action="" method="POST">
                 <fieldset>
-                    <input type="text" name="name" id="form-name" placeholder="Enter Name" required><br><br>
-                    <input type="text" name="email" id="form-email" placeholder="Enter Email" required><br>
+                    <input type="text" name="Name" id="form-name" placeholder="Name" required><br>
+                    <input type="text" name="Email" id="form-email" placeholder="Email" required><br>
+                    <input type="number" name="Phone Number" id="phone-number" placeholder="Phone Number"><br>
 
-                    <label for="form-message">Message</label><br>
-                    <textarea name="message" id="form-message"></textarea>
+                    <textarea name="message" id="form-message" placeholder=" Message"></textarea>
                         <input type="submit" class="form-button" id="form-submit" value="Send">
-
                 </fieldset>
                 </form>
             </div>
@@ -147,16 +154,15 @@
 
 
     </main>
-    <footer class="hide-show">
-        <p>Colorado Springs, CO | <a href="#">acknowledgements</a></p>
+    <footer>
+    <br><br><br>
     </footer>
-
         <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
                                      Script
-
         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
         <script src="js/app.js"></script>
+        <script src="js/charts.js"></script>
 </body>
 </html>
