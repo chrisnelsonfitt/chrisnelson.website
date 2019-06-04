@@ -135,24 +135,20 @@
      <div class="hide-show" id="contact-container">
             <div id="contact-form">
                  <iframe name="frame"></iframe>
+                  <div id="form-messages"></div>
                  <h3>Contact Me</h3>
-                <div id="form-messages"></div>
-
-                <form target="frame" id="ajax-contact" action="" method="POST">
+                <form target="frame" id="ajax-contact" action="php/mailer.php" method="post">
                 <fieldset>
-                    <input type="text" name="Name" id="form-name" placeholder="Name" required><br>
-                    <input type="text" name="Email" id="form-email" placeholder="Email" required><br>
-                    <input type="number" name="Phone Number" id="phone-number" placeholder="Phone Number"><br>
-
-                    <textarea name="message" id="form-message" placeholder=" Message"></textarea>
+                    <input type="text" name="name" id="name" placeholder="Name" required><br>
+                    <input type="text" name="email" id="email" placeholder="Email" required><br>
+                    <input type="number" name="number" id="number" placeholder="Phone Number"><br>
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
                         <input type="submit" class="form-button" id="form-submit" value="Send">
                 </fieldset>
                 </form>
             </div>
         </div>
     </div>
-
-
     </main>
     <footer>
     <br><br><br>
@@ -163,6 +159,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
         <script src="js/app.js"></script>
+        <script src="js/form.js"></script>
         <script src="js/charts.js"></script>
 </body>
 </html>

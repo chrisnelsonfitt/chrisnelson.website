@@ -5,9 +5,9 @@ $(function() {
 
     var formMessages = $('#form-messages');
 
-    
+
     $(form).submit(function(e) {
-        
+
         e.preventDefault();
 
         // Serialize the form data.
@@ -30,7 +30,7 @@ $(function() {
             // Clear the form.
             $('#name').val('');
             $('#email').val('');
-             $('#phone').val('');
+            $('#phone').val('');
             $('#message').val('');
         })
         .fail(function(data) {

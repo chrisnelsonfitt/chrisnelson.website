@@ -108,13 +108,21 @@ span{
 }
 #form-messages{
     display: block;
-    width:75%;
+    width:70%;
+    height: 25px;
     min-width:300px;
     font-size: 1.233rem;
     margin:auto;
-    background:$white;
     color:$almost_black;
     border-radius: 4px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.success{
+  background:$success;
 
+}
+.error{
+  background:$error; 
 }
