@@ -679,7 +679,6 @@ h3 {
 }
 
 #contact-container {
-  padding: 20px;
   border-radius: 4px;
   display: block;
   margin: 5% auto 0px;
@@ -694,13 +693,11 @@ h3 {
 }
 
 #contact-form {
-  border-radius: 5px;
+  width: 100%;
   background: #F4F4F4;
   display: block;
   margin: auto;
   font-size: 1rem;
-  margin-bottom: 35px;
-  padding: 5px;
 }
 #contact-form fieldset {
   font-size: 1rem;
@@ -756,9 +753,12 @@ h3 {
 #contact-form .form-button {
   border-radius: 3px;
   border-bottom: none;
-  margin: 10px;
+  margin-top: 10px;
   background: #DADDF0;
-  max-width: 125px;
+  width: 125px !important;
+  float: left;
+  position: relative;
+  margin-left: 18%;
 }
 #contact-form .form-button:hover {
   background: #c8cce9;
@@ -788,13 +788,13 @@ span img {
 
 #form-messages {
   display: block;
-  width: 70%;
-  height: 25px;
+  width: 100%;
+  height: auto;
   min-width: 300px;
   font-size: 1.233rem;
   margin: auto;
-  color: white;
-  border-radius: 4px;
+  margin-top: 2%;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -802,10 +802,12 @@ span img {
 
 .success {
   background: #A9FFD3;
+  color: #514E49;
 }
 
 .error {
   background: #ff6347;
+  color: white;
 }
 
 .gallery_tag {
@@ -855,14 +857,37 @@ span img {
 }
 
 .portfolio-expand {
-  background: rgba(225, 230, 231, 0.9);
+  margin: auto;
+  position: fixed;
+  top: 5%;
+  bottom: 0%;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  background-color: red;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: #E1E6E7;
+}
+.portfolio-expand a {
+  padding: 15px;
+  color: #403B3F;
+  display: block;
+  margin: auto;
+  width: 75%;
+  max-width: 500px;
+  display: block;
+  margin: 20px auto;
+}
+.portfolio-expand .close_button {
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin: 10px 20px;
+  background: red;
 }
 .portfolio-expand p {
   width: 70%;
-}
-.portfolio-expand p a {
-  padding: 15px;
-  color: #403B3F;
 }
 .portfolio-expand div {
   display: block;
@@ -909,17 +934,12 @@ span img {
   max-width: 500px;
   display: block;
   margin: 20px auto;
-  width: 90%;
-  padding-top: 5px;
+  padding-top: 5%;
   height: auto;
   display: block;
   margin: 0 auto;
   border-radius: 3px;
-  padding-top: 20px;
-}
-.portfolio-expand img:hover {
-  animation: size 1s forwards;
-  margin-bottom: 20px;
+  padding-top: 50px;
 }
 .portfolio-expand p {
   width: 75%;
@@ -934,6 +954,33 @@ span img {
   max-width: 500px;
   display: block;
   margin: 20px auto;
+}
+
+.close-ajax {
+  border: none;
+  margin-top: 5%;
+  width: 10px;
+}
+
+.close-ajax:hover {
+  cursor: pointer;
+}
+.close-ajax:hover svg {
+  fill: #1D1D1B;
+}
+
+.linkButton {
+  display: block;
+  background: #DADDF0;
+  padding: 1%;
+  margin: 5% auto;
+  border-radius: 3px;
+  border: none;
+}
+
+.linkButton:hover {
+  background: #c8cce9;
+  cursor: pointer;
 }
 
 .background-image {

@@ -10,8 +10,10 @@ var design = $("#design");
 var indreams = $("#indreams");
 var accessible = $("#accessible");
 var gallery_item = $(".gallery-item");
-var ajax_close = $(".close-expandable");
+var ajax_close = $(".close_button");
 var nerro = $("#nerro");
+var portfolio_item = $(".portfolio-expand")
+
 //Show gallery Items as you scroll over them
    $(window).scroll( function(){
        //Check where each item is located
@@ -28,11 +30,9 @@ var nerro = $("#nerro");
    });
 
 
-//Open Ajax File and scroll to expanded version.
+//Disable scroll
 gallery_item.click(function() {
-     $("html, body").animate({
-         scrollTop: $("#toLocation").offset().top
-     }, 500);
+     $("body").css({ 'overflow': 'hidden' });
 });
     //Load Ajax Pages
 form.click(function () {
@@ -40,6 +40,7 @@ form.click(function () {
 });
 lightbox.click(function(){
     portfolio_load.load("ajax-files/lightbox.html");
+
 });
 photography.click(function(){
     portfolio_load.load("ajax-files/photography.html");
@@ -69,6 +70,16 @@ indreams.click(function(){
   portfolio_load.load("ajax-files/dreamswrapper.html");
 });
 
+//Hide Ajax On click
+$(document).mouseup(function(e)
+{
+  var container = $(".linkButton");
+    if (!container.is(e.target) && container.has(e.target).length === 0)
+    {
+        container.parent().hide();
+        $("body").css({ 'overflow': 'auto' });
+    }
+});
 
 $(function() {
 

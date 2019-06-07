@@ -38,20 +38,40 @@
     }
     .gallery-item:hover{
              animation: size 400ms forwards;
-             
+
         }
 }
 .portfolio-expand{
-   background:rgba($white,.9);
+  margin:auto;
+  position: fixed;
+  top:5%;
+  bottom:0%;
+  width: 100%;
+  left:0px;
+  right:0px;
+  background-color: red;
 
+  overflow-x: hidden;
+  overflow-y: scroll;
+   background:$white;
+
+   a{
+       padding:15px;
+       color:$text;
+       display: block;
+       margin: auto;
+      @include sample-width;
+  }
+   .close_button{
+     width: 20px;
+     height: 20px;
+     float:right;
+     margin: 10px 20px;
+     background:red;
+   }
 
     p{
         width:70%;
-
-         a{
-             padding:15px;
-             color:$text;
-    }
     }
     div{
 
@@ -85,27 +105,21 @@
     }
     h1{
         @include sample-width;
-
         margin-top:60px;
-
         border-bottom: solid 2px $text;
         font-size:1.3rem;
 
     }
     img{
-
         @include sample-width;
-        width:90%; padding-top:5px;
+       padding-top:5%;
         height: auto;
         display: block;
         margin: 0 auto;
         border-radius: 3px;
-        padding-top:20px;
+        padding-top:50px;
     }
-    img:hover{
-        animation: size 1s forwards;
-        margin-bottom:20px;
-    }
+
     p{
         @include sample-width;
         font-size: 1.2rem;
@@ -115,4 +129,30 @@
         @include sample-width;
     }
 
+}
+.close-ajax{
+  border: none;
+  margin-top:5%;
+  width: 10px;
+}
+.close-ajax:hover{
+    cursor:pointer;
+    
+    svg{
+      fill:#1D1D1B;
+
+    }
+
+}
+.linkButton{
+  display: block;
+  background: $grad1;
+  padding: 1%;
+  margin: 5% auto;
+  border-radius: 3px;
+  border: none;
+}
+.linkButton:hover{
+   background: darken($grad1,5%);
+   cursor:pointer;
 }
