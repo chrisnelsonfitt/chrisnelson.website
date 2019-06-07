@@ -848,8 +848,8 @@ span img {
   width: 100%;
   border-radius: 2px;
 }
-.gallery-container .gallery-item:hover {
-  animation: size 400ms forwards;
+.gallery-container img:hover {
+  box-shadow: 2px 2px 5px;
 }
 
 .portfolio-expand {
@@ -1012,14 +1012,6 @@ span img {
   background: rgba(225, 230, 231, 0.6);
 }
 
-@keyframes size {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.2);
-  }
-}
 @keyframes point {
   0% {
     cursor: default;
@@ -1102,12 +1094,6 @@ span img {
   padding-left: 10px;
   margin: 100px auto -10px;
   border-bottom: solid 1px #403B3F;
-}
-
-.close-ajax{
-  border: none;
-  margin-top:5%;
-  width: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

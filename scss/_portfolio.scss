@@ -36,8 +36,8 @@
             border-radius: 2px;
         }
     }
-    .gallery-item:hover{
-             animation: size 400ms forwards;
+    img:hover{
+            box-shadow: 2px 2px 5px;
 
         }
 }
