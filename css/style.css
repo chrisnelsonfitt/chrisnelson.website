@@ -753,12 +753,8 @@ h3 {
 #contact-form .form-button {
   border-radius: 3px;
   border-bottom: none;
-  margin-top: 10px;
+  margin: 10px;
   background: #DADDF0;
-  width: 125px !important;
-  float: left;
-  position: relative;
-  margin-left: 18%;
 }
 #contact-form .form-button:hover {
   background: #c8cce9;
@@ -1106,6 +1102,12 @@ span img {
   padding-left: 10px;
   margin: 100px auto -10px;
   border-bottom: solid 1px #403B3F;
+}
+
+.close-ajax{
+  border: none;
+  margin-top:5%;
+  width: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
